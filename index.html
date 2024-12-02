@@ -27,6 +27,24 @@
          width: 80%;
          max-width: 600px;
       }
+      .navbar {
+         display: flex;
+         justify-content: center;
+         background-color: #000000;
+         padding: 10px 0;
+      }
+      .navbar a {
+         color: white;
+         text-decoration: none;
+         padding: 14px 20px;
+         font-family: 'JetBrains Mono', monospace;
+         font-size: 0.7rem;
+         text-transform: uppercase;
+      }
+      .navbar a:hover {
+         background-color: #575757;
+         color: yellow;
+      }
       section {
          display: flex;
          flex-wrap: wrap;
@@ -68,8 +86,9 @@
          font-weight: bold;
       }
       .colourtxt {
-      color: yellow;
+         color: yellow;
       }
+
 
       @media screen and (min-width: 600px) {
          section {
@@ -86,6 +105,12 @@
          }
          p {
             font-size: 1.2rem;
+         }      
+         .txt {
+         font-size: 1.7rem;
+         }
+         div {
+         padding: 150px;
          }
       }
       @media screen and (max-width: 600px) {
@@ -102,10 +127,14 @@
          .center {
             width: 100%;
          }
+         .txt {
+         font-size: 1.2rem;
+         }
+         div {
+         padding: 75px;
+         }
       }
-      div {
-         padding: 50px
-      }
+
    </style>
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -115,6 +144,12 @@
    <header>
       <img src="site banner.jpg" alt="Site Banner" class="center">
    </header>
+   <nav class="navbar">
+      <a href="#index">Index</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+   </nav>
    <section>
       <nav>
          <h1><b>Who Am I?</b></h1>
@@ -127,8 +162,8 @@
    <footer>
       <div>
          <p>
-            The whole point of <span class="highlight">COLLABERATION</span> is that you give and take from each other, and that's how you create things that are totally <span class="highlight">NEW</span>.
-            <br><span class="colourtxt">-Virgil Abloh</span>
+            <span class="txt">The whole point of <span class="highlight">COLLABORATION</span> is that you give and take from each other, and that's how you create things that are totally <span class="highlight">NEW</span>.
+            </span><br><span class="colourtxt">-Virgil Abloh</span>
          </p>
       </div>
    </footer>
